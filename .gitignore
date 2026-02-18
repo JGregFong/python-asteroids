@@ -218,3 +218,6 @@ wheels/
 # Virtual environments
 .venv
 >>>>>>> 2113e2d (added .gitignore)
+
+#Game Events from logger
+game_events.jsonl
