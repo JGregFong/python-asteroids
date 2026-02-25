@@ -12,6 +12,7 @@ def main():
     pygame.init()
     clock = pygame.time.Clock()
     dt = 0
+    score = 0
 
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     print("Starting Asteroids with pygame version: VERSION")
@@ -50,12 +51,13 @@ def main():
             if(player.collides_with(rock)):
                 log_event("player_hit")
                 print("Game Over")
+                print(f"Score: {score}")
                 sys.exit()
             for shot in shots:
                 if(shot.collides_with(rock)):
                     log_event("asteroid_shot")
                     shot.kill()
-                    rock.split()
+                    score += rock.split()
 
 
 
