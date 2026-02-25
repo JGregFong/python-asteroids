@@ -221,3 +221,9 @@ wheels/
 
 #Game Events from logger
 game_events.jsonl
+
+.idea/
+.python-version
+game_state.jsonl
+pyproject.toml
+uv.lock
